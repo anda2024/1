@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATLL LTD | Premium Hospitality & Event Access</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <!-- Hero Section with Logo -->
+    <div class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-gray-900"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 z-10 text-center">
+            <!-- Logo -->
+            <svg viewBox="0 0 200 60" class="h-16 mx-auto mb-12" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="10" width="120" height="40" fill="#0F172A" rx="4"/>
+                <text x="20" y="40" font-family="Arial" font-weight="bold" font-size="28" fill="white" letter-spacing="2">ATLL</text>
+                <line x1="140" y1="30" x2="180" y2="30" stroke="#3B82F6" stroke-width="3"/>
+                <circle cx="185" cy="30" r="4" fill="#3B82F6"/>
+            </svg>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">
+                Exceptional Access
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
+                Curated experiences at the world's most prestigious events
+            </p>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="max-w-7xl mx-auto px-4 py-24">
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="bg-gray-800/50 p-8 rounded-2xl backdrop-blur-sm">
+                <div class="text-4xl mb-6">🎵</div>
+                <h3 class="text-2xl font-semibold mb-4 text-blue-400">Music Events</h3>
+                <p class="text-gray-400">Exclusive access to world-class concerts, festivals, and backstage experiences.</p>
+            </div>
+            <div class="bg-gray-800/50 p-8 rounded-2xl backdrop-blur-sm">
+                <div class="text-4xl mb-6">🏆</div>
+                <h3 class="text-2xl font-semibold mb-4 text-blue-400">Sports Events</h3>
+                <p class="text-gray-400">Premium hospitality at major sporting events and international tournaments.</p>
+            </div>
+            <div class="bg-gray-800/50 p-8 rounded-2xl backdrop-blur-sm">
+                <div class="text-4xl mb-6">🎭</div>
+                <h3 class="text-2xl font-semibold mb-4 text-blue-400">Entertainment</h3>
+                <p class="text-gray-400">VIP access to theater premieres and cultural events worldwide.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="bg-gray-800/30 py-24">
+        <div class="max-w-2xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-blue-400 text-center">Get in Touch</h2>
+            <p class="text-gray-400 mb-12 text-center">Leave your details and we'll contact you about exclusive event access</p>
+            
+            <form class="space-y-6 bg-gray-800/50 p-8 rounded-2xl backdrop-blur-sm">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-blue-400 mb-2" for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required
+                            class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-gray-100 focus:outline-none focus:border-blue-400 transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-blue-400 mb-2" for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required
+                            class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-gray-100 focus:outline-none focus:border-blue-400 transition-colors">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-blue-400 mb-2" for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required
+                        class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-gray-100 focus:outline-none focus:border-blue-400 transition-colors">
+                </div>
+
+                <div>
+                    <label class="block text-blue-400 mb-2" for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required
+                        class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-gray-100 focus:outline-none focus:border-blue-400 transition-colors">
+                </div>
+
+                <div>
+                    <label class="block text-blue-400 mb-2" for="eventInterest">Event Interest</label>
+                    <select id="eventInterest" name="eventInterest" required
+                        class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-gray-100 focus:outline-none focus:border-blue-400 transition-colors">
+                        <option value="">Select an option</option>
+                        <option value="music">Music Events</option>
+                        <option value="sports">Sports Events</option>
+                        <option value="entertainment">Entertainment</option>
+                        <option value="multiple">Multiple Categories</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-blue-400 mb-2" for="message">Additional Information</label>
+                    <textarea id="message" name="message" rows="4"
+                        class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-gray-100 focus:outline-none focus:border-blue-400 transition-colors resize-none"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-lg font-semibold hover:bg-blue-700 transition-all duration-300">
+                    Submit Inquiry
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Simple Footer -->
+    <footer class="bg-gray-900 py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gray-400">Email: team@atll.co.uk | Website: atll.co.uk</p>
+        </div>
+    </footer>
+</body>
+</html>
